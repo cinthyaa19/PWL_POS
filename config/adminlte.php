@@ -371,6 +371,12 @@ return [
                 ],
             ],
         ],
+        ['header' => 'MANAGE CATEGORIES'],
+        [
+            'text' => 'Category',
+            'url' => '/kategori',
+            'icon' => 'fas fa-fw fa-list',
+        ],
         ['header' => 'labels'],
         [
             'text' => 'important',
