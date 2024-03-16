@@ -132,7 +132,7 @@
     </body>
 </html> --}}
 
-{{-- @extends('layout.app')
+{{-- @extends('layout.app') --}}
 
 {{-- Customize layout sections --}}
 
