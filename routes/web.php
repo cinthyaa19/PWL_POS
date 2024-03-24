@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\LevelController;
+use App\Http\Controllers\POSController;
 use App\Http\Controllers\UserController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -41,3 +42,7 @@ Route::put('/kategori/edit_simpan/{id}', [KategoriController::class, 'edit_simpa
 
 Route::get('/kategori/hapus/{id}', [KategoriController::class, 'hapus'])->name('kategori.hapus');
 
+Route::post('/level/store', [LevelController::class, 'store'])->name('/level/store');
+Route::get('/level/create', [LevelController::class, 'create'])->name('level.create');
+
+Route::resource('m_user', POSController::class);
