@@ -18,4 +18,10 @@ class m_user extends Model
         'nama',
         'password',
     ];
+
+    // Definisikan relasi One-to-One dengan model Level
+    public function level()
+    {
+        return $this->belongsTo(Level::class, 'level_id');
+    }
 }

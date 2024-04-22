@@ -33,7 +33,13 @@
             </div>
             <table class="table table-bordered table-striped table-hover table-sm" id="table_user">
                 <thead>
-                    <tr><th>ID</th><th>Username</th><th>Nama</th><th>Level Pengguna</th><th>Aksi</th></tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Nama</th>
+                        <th>Level Pengguna</th>
+                        <th>Aksi</th>
+                    </tr>
                 </thead>
             </table>
         </div>
@@ -50,8 +56,8 @@
                 ajax: {
                     "url": "{{ url('user/list') }}",
                     "dataType": "json",
-                    "type": "POST"
-                    "data": function(d) {
+                    "type": "POST", 
+                    "data": function (d) {
                         d.level_id = $('#level_id').val();
                     }
                 },
@@ -100,7 +106,6 @@
             $('#level_id').on('change', function() {
                 dataUser.ajax.reload();
             });
-            
         });
     </script>
 @endpush
