@@ -10,6 +10,7 @@ use App\Http\Controllers\StokController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LogoutController;
 use Database\Seeders\LevelSeeder;
 
 Route::get('/', [WelcomeController::class,'index']);
