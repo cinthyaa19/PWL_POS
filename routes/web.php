@@ -112,6 +112,8 @@ Route::group(['middleware' => ['auth']], function () {
 });
 
 
+
+
 // use App\Http\Controllers\KategoriController;
 // use App\Http\Controllers\LevelController;
 // use App\Http\Controllers\POSController;
